@@ -72,8 +72,8 @@
 
     Hoisting is JavaScript's default behavior of moving declarations to the top of their scope before code execution.
 
-     1. **var:** Declarations are hoisted and initialized with undefined.
-   
+   1. **var:** Declarations are hoisted and initialized with undefined.
+
       ```javascript
       console.log(a); // undefined
       var a = 3;
@@ -84,7 +84,8 @@
       console.log(a); // undefined
       a = 3;
       ```
-     2. **let and const:**  Declarations are hoisted but not initialized. Accessing them before declaration results in a `ReferenceError`.
+      
+   2. **let and const:**  Declarations are hoisted but not initialized. Accessing them before declaration results in a `ReferenceError`.
 
       ```javascript
       console.log(b); // ReferenceError

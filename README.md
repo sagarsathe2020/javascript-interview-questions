@@ -10,6 +10,7 @@
 | No. | Questions |
 | --- | --------- |
 | 1 | [What are the differences between var, let, and const in JavaScript?](#what-are-the-differences-between-var-let-and-const-in-javaScript) |
+| 2 | [How does variable hoisting work in JavaScript wrt var, let, const?](#how-does-variable-hoisting-work-in-javaScript-wrt-var-let-const) |
 <!-- TOC_END -->
 
 <!-- QUESTIONS_START -->
@@ -66,6 +67,31 @@
       ```
 
       **[⬆ Back to Top](#table-of-contents)**
+
+2. ### How does variable hoisting work in JavaScript wrt var, let, const?
+
+  Hoisting is JavaScript's default behavior of moving declarations to the top of their scope before code execution.
+
+  1. **var:** Declarations are hoisted and initialized with undefined.
+   
+      ```javascript
+      console.log(a); // undefined
+      var a = 3;
+
+      // it is interpreted as
+
+      var a;
+      console.log(a); // undefined
+      a = 3;
+      ```
+  2. **let and const:**  Declarations are hoisted but not initialized. Accessing them before declaration results in a `ReferenceError`.
+
+      ```javascript
+      console.log(b); // ReferenceError
+      let b = 5;
+      ```
+
+   **[⬆ Back to Top](#table-of-contents)**
 
 ---
  

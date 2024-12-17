@@ -1,0 +1,12 @@
+{
+  "name": "javascript-interview-questions",
+  "version": "1.0.0",
+  "description": "List of JavaScript Interview Questions",
+  "author": "Sagar Sathe",
+  "scripts": {
+    "gen": "node scripts/toc.mjs"
+  },
+  "dependencies": {
+    "github-slugger": "^2.0.0"
+  }
+}

@@ -70,7 +70,7 @@
 
 2. ### How does variable hoisting work in JavaScript wrt var, let, const?
 
-  Hoisting is JavaScript's default behavior of moving declarations to the top of their scope before code execution.
+    Hoisting is JavaScript's default behavior of moving declarations to the top of their scope before code execution.
 
   1. **var:** Declarations are hoisted and initialized with undefined.
    
